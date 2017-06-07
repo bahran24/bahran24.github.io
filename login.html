@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>beranda</title>
+<style>
+form {
+    border: 3px solid #FA8072;
+    width: 50%;
+    margin: 0 25%;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    background-color: #FA8072;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.container {
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+
+<form action="fungsi.php" method="POST">
+  <div align=center class="container">
+	<h2 align=center>Login Maistro</h2>
+	<img style="margin:1%; width:97%;" src="bean.jpg"><br/>
+    <input type="text" placeholder="Username" name="uname"/>
+    <br/>
+    <input type="password" placeholder="Enter Password" name="psw"/>
+    <br/>
+    <select name="peran">
+	  <option value="admin">maistro</option>
+      <option value="user">Member</option>
+      
+	  <img style="margin:1%; width:97%;" src="IMG_4841.jpg"><br/>
+    </select>
+    <input type="submit" value="L O G I N">
+  </div>
+</form>
+
+</body>
+</html>
